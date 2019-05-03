@@ -1,0 +1,209 @@
+/*
+    Modified from: https://github.com/philipwalton/solved-by-flexbox
+*/
+
+.cem-flex {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cem-flex-cell {
+    flex: 1;
+}
+
+.cem-flex--flexCells > .cem-flex-cell {
+    display: flex;
+}
+  
+.cem-flex--top {
+    align-items: flex-start;
+}
+
+.cem-flex--bottom {
+    align-items: flex-end;
+}
+
+.cem-flex--center {
+    align-items: center;
+}
+
+.cem-flex--justifyCenter {
+    justify-content: center;
+}
+
+.cem-flex-cell--top {
+    align-self: flex-start;
+}
+
+.cem-flex-cell--bottom {
+    align-self: flex-end;
+}
+
+.cem-flex-cell--center {
+    align-self: center;
+}
+
+.cem-flex-cell--autoSize {
+    flex: none;
+}
+
+.cem-flex--fit > .cem-flex-cell {
+    flex: 1;
+}
+
+.cem-flex--full > .cem-flex-cell {
+    flex: 0 0 100%;
+}
+
+.cem-flex--1of2 > .cem-flex-cell {
+    flex: 0 0 50%;
+}
+
+.cem-flex--1of3 > .cem-flex-cell {
+    flex: 0 0 33.3333%;
+}
+
+.cem-flex--1of4 > .cem-flex-cell {
+    flex: 0 0 25%;
+}
+
+@media (min-width: 576px) {
+    .small-cem-flex--fit > .cem-flex-cell {
+        flex: 1;
+    }
+    .small-cem-flex--full > .cem-flex-cell {
+        flex: 0 0 100%;
+    }
+    .small-cem-flex--1of2 > .cem-flex-cell {
+        flex: 0 0 50%;
+    }
+    .small-cem-flex--1of3 > .cem-flex-cell {
+        flex: 0 0 33.3333%;
+    }
+    .small-cem-flex--1of4 > .cem-flex-cell {
+        flex: 0 0 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    .med-cem-flex--fit > .cem-flex-cell {
+        flex: 1;
+    }
+    .med-cem-flex--full > .cem-flex-cell {
+        flex: 0 0 100%;
+    }
+    .med-cem-flex--1of2 > .cem-flex-cell {
+        flex: 0 0 50%;
+    }
+    .med-cem-flex--1of3 > .cem-flex-cell {
+        flex: 0 0 33.3333%;
+    }
+    .med-cem-flex--1of4 > .cem-flex-cell {
+        flex: 0 0 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .large-cem-flex--fit > .cem-flex-cell {
+        flex: 1;
+    }
+    .large-cem-flex--full > .cem-flex-cell {
+        flex: 0 0 100%;
+    }
+    .large-cem-flex--1of2 > .cem-flex-cell {
+        flex: 0 0 50%;
+    }
+    .large-cem-flex--1of3 > .cem-flex-cell {
+        flex: 0 0 33.3333%;
+    }
+    .large-cem-flex--1of4 > .cem-flex-cell {
+        flex: 0 0 25%;
+    }
+}
+
+.cem-flex--gutters {
+    margin: -1em 0 1em -1em;
+}
+.cem-flex--gutters > .cem-flex-cell {
+    padding: 1em 0 0 1em;
+}
+
+.cem-flex--guttersLg {
+    margin: -1.5em 0 1.5em -1.5em;
+}
+.cem-flex--guttersLg > .cem-flex-cell {
+    padding: 1.5em 0 0 1.5em;
+}
+
+.cem-flex--guttersXl {
+    margin: -2em 0 2em -2em;
+}
+.cem-flex--guttersXl > .cem-flex-cell {
+    padding: 2em 0 0 2em;
+}
+
+@media (min-width: 576px) {
+    .small-cem-flex--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .small-cem-flex--gutters > .cem-flex-cell {
+        padding: 1em 0 0 1em;
+    }
+    .small-cem-flex--guttersLg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .small-cem-flex--guttersLg > .cem-flex-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .small-cem-flex--guttersXl {
+        margin: -2em 0 2em -2em;
+    }
+    .small-cem-flex--guttersXl > .cem-flex-cell {
+        padding: 2em 0 0 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .med-cem-flex--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .med-cem-flex--gutters > .cem-flex-cell {
+        padding: 1em 0 0 1em;
+    }
+    .med-cem-flex--guttersLg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .med-cem-flex--guttersLg > .cem-flex-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .med-cem-flex--guttersXl {
+        margin: -2em 0 2em -2em;
+    }
+    .med-cem-flex--guttersXl > .cem-flex-cell {
+        padding: 2em 0 0 2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .large-cem-flex--gutters {
+        margin: -1em 0 1em -1em;
+    }
+    .large-cem-flex--gutters > .cem-flex-cell {
+        padding: 1em 0 0 1em;
+    }
+    .large-cem-flex--guttersLg {
+        margin: -1.5em 0 1.5em -1.5em;
+    }
+    .large-cem-flex--guttersLg > .cem-flex-cell {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .large-cem-flex--guttersXl {
+        margin: -2em 0 2em -2em;
+    }
+    .large-cem-flex--guttersXl > .cem-flex-cell {
+        padding: 2em 0 0 2em;
+    }
+}
