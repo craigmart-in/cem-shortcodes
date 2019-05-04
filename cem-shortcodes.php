@@ -59,7 +59,7 @@ if ( ! function_exists('cem_sc_flex_func')) {
             $lgtype = " large-cem-flex--" . $lgtype;
         }
 
-        $html = "<div class=\"cem-flex" . $type . $smtype . $mdtype . $lgtype . $align . $justify . "\">\n";
+        $html = "<div class=\"cem-flex cem-flex--gutters" . $type . $smtype . $mdtype . $lgtype . $align . $justify . "\">\n";
         $html .= "    ".do_shortcode($content)."\n";
         $html .= "</div>";
 
