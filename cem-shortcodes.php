@@ -79,3 +79,21 @@ if ( ! function_exists('cem_sc_flex_cell_func')) {
     }
     add_shortcode('cell', 'cem_sc_flex_cell_func');
 }
+
+if ( ! function_exists('cem_sc_button_func')) {
+    function cem_sc_button_func($atts, $content = null) {
+    
+        $a = shortcode_atts(array(
+            'link' => null,
+        ), $atts);
+    
+        $link = esc_attr($a['link']);
+
+        $html = "<div class=\"cem-button\">\n";
+        $html .= "    <a class=\"cem-button__link\" href=\"" . $link . "\">" . do_shortcode($content) . "</a>\n";
+        $html .= "</div>";
+
+        return apply_filters('cem_sc_button_html', $html);
+    }
+    add_shortcode('button', 'cem_sc_button_func');
+}
